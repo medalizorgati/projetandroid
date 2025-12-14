@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4CAF50">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="Back button"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter une offre"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/typeMetiers"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_bg"
+                android:hint="Type métiers"
+                android:paddingStart="50dp"
+                android:paddingEnd="20dp"
+                android:drawableStart="@android:drawable/ic_menu_edit"
+                android:drawablePadding="12dp"
+                android:textColor="#000"
+                android:textColorHint="#BBBBBB"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formation Demandée :"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/formationDemandeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="15dp"
+                android:layout_marginBottom="25dp" />
+
+            <EditText
+                android:id="@+id/offreSalaire"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_bg"
+                android:hint="Donner votre offre (Salaire)"
+                android:paddingStart="50dp"
+                android:paddingEnd="20dp"
+                android:inputType="numberDecimal"
+                android:drawableStart="@android:drawable/ic_menu_info_details"
+                android:drawablePadding="12dp"
+                android:textColor="#000"
+                android:textColorHint="#BBBBBB"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/competences"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_bg"
+                android:hint="Les compétences"
+                android:paddingStart="50dp"
+                android:paddingEnd="20dp"
+                android:drawableStart="@android:drawable/ic_menu_sort_by_size"
+                android:drawablePadding="12dp"
+                android:textColor="#000"
+                android:textColorHint="#BBBBBB"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/rounded_bg"
+                android:hint="Description"
+                android:padding="20dp"
+                android:gravity="top"
+                android:textColor="#000"
+                android:textColorHint="#BBBBBB"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/publishBtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Publier"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#4CAF50"
+                android:radius="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

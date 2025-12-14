@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Bouton Retour -->
+    <TextView
+        android:id="@+id/btnRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retourner"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:textSize="18sp" />
+
+    <!-- Barre de recherche -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#F5F5F5"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#EEEEEE"
+        android:radius="50dp">
+
+        <ImageView
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="#4CAF50"/>
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="Rechercher"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <!-- Titre -->
+    <TextView
+        android:text="Les offres"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- LISTVIEW -->
+    <ListView
+        android:id="@+id/listOffres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"/>
+
+</LinearLayout>
